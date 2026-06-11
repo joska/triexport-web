@@ -161,25 +161,34 @@
     <h3>Generated GPX Files</h3>
     <p>The App writes GPX files to Your Device's temporary storage so You can share them via the iOS share sheet (for example, to upload them to Strava). What happens to a file after You share it is governed by the destination service's own privacy policy, not Ours.</p>
 
+    <h3>Crash and Error Reporting (Sentry)</h3>
+    <p>We use <strong>Sentry</strong> (Sentry, Inc., 45 Fremont Street, 8th Floor, San Francisco, CA 94105, USA) for crash and error reporting to improve App stability. When a crash or error occurs, Sentry may automatically collect:</p>
+    <ul>
+      <li>Device type and operating system version</li>
+      <li>App version</li>
+      <li>Error stack trace</li>
+    </ul>
+    <p>This diagnostic data is used solely for diagnosing and fixing technical issues. We have configured Sentry so that it does <strong>not</strong> collect any user-identifying information or workout content. Crash data is transmitted securely over HTTPS and retained by Sentry in accordance with their data retention policies. For more information, see <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry's Privacy Policy</a>.</p>
+
     <h3>Data We Do Not Collect</h3>
     <div class="not-collected">
-      <p style="margin-bottom: 0.5rem;">We explicitly do <strong>not</strong> collect:</p>
+      <p style="margin-bottom: 0.5rem;">Beyond the crash reporting above, We explicitly do <strong>not</strong> collect:</p>
       <ul>
         <li>Names, email addresses, or any account information</li>
         <li>Location data outside of the GPS samples already stored in Your HealthKit workouts (which never leave Your Device through the App)</li>
         <li>Analytics, telemetry, or usage statistics</li>
-        <li>Crash reports or diagnostic data</li>
         <li>Payment information</li>
         <li>Device contacts, photos, or camera data</li>
         <li>Any other Personal Data</li>
       </ul>
     </div>
-    <p>TriExport contains no third-party SDKs, no advertising frameworks, and no network calls of its own.</p>
+    <p>TriExport contains no advertising frameworks. The only network calls the App makes are crash reports sent to Sentry as described above.</p>
 
     <hr>
 
     <h2>Legal Basis for Processing (GDPR)</h2>
-    <p>For users in the European Economic Area, the United Kingdom, or Switzerland: because all processing of Your workout data occurs locally on Your Device and We never receive or store any Personal Data, no controller-side processing under the GDPR takes place. Apple acts as the data controller for HealthKit data on Your Device in accordance with Apple's Privacy Policy.</p>
+    <p>For users in the European Economic Area, the United Kingdom, or Switzerland: all processing of Your workout data occurs locally on Your Device and We never receive or store that data, so no controller-side processing of HealthKit data under the GDPR takes place. Apple acts as the data controller for HealthKit data on Your Device in accordance with Apple's Privacy Policy.</p>
+    <p>For crash and error reporting via Sentry, the legal basis is Our <strong>legitimate interest</strong> (Article 6(1)(f) GDPR) in maintaining a stable and functional application. Only technical diagnostic data (device type, OS version, App version, and error stack trace) is processed — no workout content or user-identifying information is included.</p>
 
     <hr>
 
@@ -205,7 +214,7 @@
     <hr>
 
     <h2>Data Storage and Security</h2>
-    <p>All workout data and generated GPX files remain on Your Device. The App does not transmit any data over the network. You are solely responsible for the security of Your Device and Your iCloud account in accordance with Apple's terms and privacy policy.</p>
+    <p>All workout data and generated GPX files remain on Your Device. The App transmits only anonymous crash diagnostic data to Sentry over HTTPS (see the Crash and Error Reporting section above). You are solely responsible for the security of Your Device and Your iCloud account in accordance with Apple's terms and privacy policy.</p>
     <p>We retain no Personal Data on Our own systems.</p>
 
     <hr>
